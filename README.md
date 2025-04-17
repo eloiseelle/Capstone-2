@@ -1,9 +1,9 @@
-# Capstone Project: Top Female Rappers by City
+# Capstone Project: Mapping the Rise: Streaming Success of Female Rappers by City
 
 ## Objective
 
-This project analyzes multiple music datasets to identify the most streamed and culturally impactful female rappers by city. 
-By combining data from Spotify, Billboard, TIDAL, and other sources, the goal is to highlight regional hubs of female rap and spotlight key artists leading the genre.
+This project analyzes multiple music datasets to identify the most streamed and culturally impactful female rappers by US city. 
+By combining data from Spotify, Billboard, TIDAL, and other sources, the goal is to highlight regional hubs of female rap and spotlight key artists leading the genre. The ultimate goal is to use these insights as the foundation for building a machine learning model that can predict future hits by female rappers, based on trends in city representation, streaming behavior, playlist inclusion, and historical performance metrics.
 
 ## Datasets used
 
