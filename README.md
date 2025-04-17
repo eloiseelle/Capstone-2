@@ -1,4 +1,4 @@
-# Capstone Project: Mapping the Rise: Streaming Success of Female Rappers by City
+# Capstone Project - Mapping the Rise: Streaming Success of Female Rappers by City
 
 ## Objective
 
