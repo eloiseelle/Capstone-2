@@ -13,14 +13,17 @@ By combining data from Spotify, Billboard, TIDAL, and other sources, the goal is
 - 'complex_best_rap_cities.csv' – Manually built dataset based on Complex's editorial ranking of best rap cities.
 - 'billboard_hot_100_with_city.csv' – Billboard Hot 100 data with artist 'gender' and 'city' information.
 
-## Process overview
+## Step-by step process 
 
-1. Loaded and cleaned all datasets, adding different separators after dealing with encoding issues.
+1. Loaded and cleaned all datasets, adding different separators after dealing with formastting issues.
 2. Standardized city names (merging "Brooklyn" and "Queens" into "NYC").
 3. Filtered for female artists (using the 'gender'column).
-4. Removed non-female rappers (singers like Beyoncé, Rihanna and male rappers wrongly classified as female).
-5. Grouped by artist and city to count mention per dataset.
-6. Merged all datasets into one.
+4. Grouped by 'artist' and 'city_clean' to count how often each female rapper appeared in each dataset.
+5. Merged all datasets into one.
+6. Cleaned artist names:
+- Stripped whitespace and standardized capitalization.
+- Corrected mislabeled entries ("j": "doja cat").
+- Removed non-female rappers (singers like Beyoncé, Rihanna and male rappers wrongly classified as female).
 7. Calculated total mentions per artist per city.
 8. Sorted and visualized the final ranking of top female rappers.
 
