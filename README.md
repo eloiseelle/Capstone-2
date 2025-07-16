@@ -41,14 +41,14 @@ Top Cities by Female Rapper Presence<br/><br/>
 <img width="1153" height="584" alt="top 10 cities" src="https://github.com/user-attachments/assets/09e52589-cab7-40c9-ab39-53b9fd6c2365" />
 
    
-Feature Importance Plot<br/>
 
-   <img width="1142" height="594" alt="top features" src="https://github.com/user-attachments/assets/89a4aad1-e58e-448f-8e4a-256548ab23fe" /><br/>
 
 
 Confusion Matrix<br/>
 
-  <img width="565" height="447" alt="confusion matrix" src="https://github.com/user-attachments/assets/54642170-13a5-41c2-9f56-9e52a0da6daf" /><br/>
+<img width="545" height="453" alt="confusion matrix" src="https://github.com/user-attachments/assets/9bc9705d-f47b-4f88-9bb1-8687c45d7510" />
+
+
 
 
 4. **Modeling**  
