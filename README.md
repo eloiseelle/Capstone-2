@@ -1,5 +1,5 @@
 
-![mapping the rise](https://github.com/user-attachments/assets/c69b62bf-6ce3-4286-a1b3-bd92b2a0043b)
+![mapping the rise 2](https://github.com/user-attachments/assets/2a6e929e-1118-4d85-b80e-b13a77e1cf83)
 
 # Mapping the Rise: Streaming Success of Female Rappers by City
 
