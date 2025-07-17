@@ -22,23 +22,20 @@ _For decades, female rappers have faced barriers in the music industry, includin
 
 ## 2. Methodology
 
-1. **Data cleaning**  
-   Gender and city metadata were added or corrected. Cities were grouped into areas (e.g., Brooklyn, Queens → NYC).
+### 1. Data wrangling  
+Used a mix of manual review and AI tagging to add missing gender and city info. Normalized cities (Harlem and Brooklyn → NYC) and removed non-rap artists like Beyoncé and Rihanna.
 
-2. **Feature engineering**  
-   Total mentions were calculated across datasets. Artists with ≥5 total mentions were labeled "hits" for prediction.
+### 2. Exploratory data analysis (EDA)  
+Explored distributions, top cities, and artist frequency across platforms using histograms and bar charts. 
 
-3. **Pre-processing**
+### 3. Preprocessing  
+Grouped artists by city and platform and labeled artists as "hit = 1" if they had 5+ mentions. Applied one-hot encoding, scaling, and handled missing values.
 
-   Before modeling, we performed additional preprocessing to refine the dataset for machine learning. 
+### 4. Modeling  
+Trained a Random Forest Classifier to predict hits from city and platform features. 
 
-4. **Modeling**  
-   A Random Forest Classifier was trained on city and platform features. Performance:  
-   - 100% accuracy on test set (n = 11)  
-   - 88% mean accuracy (cross-validation)  
-
-5. **Visualization**  
-   Created visual summaries such as:
+### 5. Visualization  
+Created visual summaries such as:
 
    - Top female rappers by total mentions
      
