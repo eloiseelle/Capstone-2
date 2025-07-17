@@ -23,58 +23,58 @@ _For decades, female rappers have faced barriers in the music industry, includin
 ## 2. Methodology
 
 1. **Data Cleaning**  
-   Standardized artist names, merged datasets, removed non-rappers (e.g., Beyoncé, Rihanna), and filtered for female artists only.
+   Gender and city metadata were added or corrected. Cities were grouped into metro areas (e.g., Brooklyn, Queens → NYC), and non-rap artists like Beyoncé and Rihanna were removed.
 
 2. **Feature Engineering**  
-   Created variables such as `total_mentions` from track counts across platforms.
+   Total mentions were calculated across datasets. Artists with ≥5 total mentions were labeled "hits" for prediction.
 
 3. **Visualization**  
-   Built key charts including:
+   Created visual summaries such as:
+
+   - Top female rappers by total mentions
+     
+      <img width="1120" height="589" alt="top female rappers" src="https://github.com/user-attachments/assets/a024ba8b-db10-4b3a-a90a-fb6f536888a9" />
 
 
-Top Female Rappers by Total Mentions<br/><br/>
-<img width="1142" height="590" alt="top 10 female rappers" src="https://github.com/user-attachments/assets/0a0ca272-4e05-4c5b-8b2b-42802293c7a7" />
-
-   
-
-Top Cities by Female Rapper Presence<br/><br/>
-<img width="1153" height="584" alt="top 10 cities" src="https://github.com/user-attachments/assets/09e52589-cab7-40c9-ab39-53b9fd6c2365" />
-
-   
+   - Leading cities for female rapper success
+     
+     <img width="1151" height="561" alt="hits by city" src="https://github.com/user-attachments/assets/fae52c7b-c3d6-4341-9648-2a01be01abbe" />
 
 
-
-Confusion Matrix<br/>
-
-<img width="545" height="453" alt="confusion matrix" src="https://github.com/user-attachments/assets/9bc9705d-f47b-4f88-9bb1-8687c45d7510" />
-
+   - Confusion Matrix for model results
+     
+     <img width="565" height="463" alt="confusion matrix" src="https://github.com/user-attachments/assets/b20cf6ff-d31f-46ff-825f-d8b363ce6cff" />
 
 
+   - Duration of female rap tracks
+     
+     <img width="965" height="552" alt="track duration" src="https://github.com/user-attachments/assets/1aa42eb5-24d7-4825-adc2-6bb4517997b8" />
 
-4. **Modeling**  
-   Trained a RandomForestClassifier to classify track success likelihood based on artist/city metadata.
+
+5. **Modeling**  
+   A Random Forest Classifier was trained on city and platform features. Performance:  
+   - 100% accuracy on test set (n = 11)  
+   - 88% mean accuracy (cross-validation)  
 
 
 ## 3. Results
 
-- **Nicki Minaj (NYC)** is #1 across all platforms witg the highest total track mentions.
-- **NYC, Houston, and Los Angeles** emerge as the strongest cities for female rap.
-- Playlist and chart presence strongly correlate with success.
-- Model achieved:
-  - **Accuracy**: 66%
-  - **Precision**: 0.74
-  - **Recall**: 0.66
-  - **F1-score**: 0.63
-
+- **Nicki Minaj (NYC)** had the highest total mentions across all platforms.  
+- **NYC, Houston, and LA** were the top cities for female rapper success.  
+- **Billboard and Spotify Top 10k** were most strongly correlated with hit status.  
+- **TIDAL and Complex** offered qualitative insights but less predictive value.  
+- Model results show promise, though further validation on larger samples is recommended.
 
 ## 4. Recommendations
 
-- We should prioritize NYC, Houston and LA as primary talent scouting locations for female rappers. 
-- As playlist inclusion rates are strongly linked to the rappers' success across cities, we should definitely use them to identify breakout artists.
-- We should use geographic insights to optimize promotional strategies, focusing on areas with the highest predicted artist potential.
+- **Scout where it counts**: Focus A&R efforts on NYC, Houston, LA, and Atlanta.  
+- **Watch early platform momentum**: Use Spotify 10k and Billboard as early breakout signals.  
+- **Use predictive tools**: Combine city and platform data for scalable artist discovery.
 
 ## 5. Future work
 
-- It would be interesting to look at other features such as lyrics, track duration and collaborations to improve the modeling.
-- We could use other algorithms and approaches to try to improve the model performance.
-- We could expand the dataset and explore international cities to track global female rap growth.
+- Add features like lyrics, mood, collaborations, and tempo.
+- Explore international scenes (e.g., the UK, France, Brazil, South Africa).
+- Incorporate TikTok and social media virality metrics.
+- Use advanced ML models (e.g., XGBoost) for better prediction.
+- Build a dashboard for label teams to explore artist metadata and predictions.
