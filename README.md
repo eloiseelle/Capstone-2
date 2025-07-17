@@ -22,13 +22,22 @@ _For decades, female rappers have faced barriers in the music industry, includin
 
 ## 2. Methodology
 
-1. **Data Cleaning**  
-   Gender and city metadata were added or corrected. Cities were grouped into metro areas (e.g., Brooklyn, Queens → NYC), and non-rap artists like Beyoncé and Rihanna were removed.
+1. **Data cleaning**  
+   Gender and city metadata were added or corrected. Cities were grouped into areas (e.g., Brooklyn, Queens → NYC).
 
-2. **Feature Engineering**  
+2. **Feature engineering**  
    Total mentions were calculated across datasets. Artists with ≥5 total mentions were labeled "hits" for prediction.
 
-3. **Visualization**  
+3. **Pre-processing**
+
+   Before modeling, we performed additional preprocessing to refine the dataset for machine learning. 
+
+4. **Modeling**  
+   A Random Forest Classifier was trained on city and platform features. Performance:  
+   - 100% accuracy on test set (n = 11)  
+   - 88% mean accuracy (cross-validation)  
+
+5. **Visualization**  
    Created visual summaries such as:
 
    - Top female rappers by total mentions
@@ -50,11 +59,6 @@ _For decades, female rappers have faced barriers in the music industry, includin
      
      <img width="965" height="552" alt="track duration" src="https://github.com/user-attachments/assets/1aa42eb5-24d7-4825-adc2-6bb4517997b8" />
 
-
-5. **Modeling**  
-   A Random Forest Classifier was trained on city and platform features. Performance:  
-   - 100% accuracy on test set (n = 11)  
-   - 88% mean accuracy (cross-validation)  
 
 
 ## 3. Results
